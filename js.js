@@ -442,11 +442,6 @@ class Locals {
         this._localsItemsCurentState = visibleArray.concat(hidenArray);
         this._renderList();
     }
-    // _anim() {
-    //     this._localsItemsCurentState.forEach(function (item) {
-    //         if(item.classList.contains('locals--anim')) item.classList.remove('locals--anim');
-    //     })
-    // }
     listToOriginalState() {
         this._renderList(true);
     }
@@ -591,7 +586,7 @@ class ModalWindow {
     }
     _createFullSizeImg(target) {
         let img = document.createElement('img');
-        let targetSrc = target.src.split('.')[0];
+        let targetSrc = target.src.split('.jpg')[0];
         img.classList.add('modal-window__img', 'img-fluid');
 
         img.src = `${targetSrc}-full.jpg`;
