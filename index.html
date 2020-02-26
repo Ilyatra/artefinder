@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="ru" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>artifinder</title>
+    <meta name="description" content="Приложение с скриншотами и описанием расположения осколков артефактов
+     для Pathfinder Kingmaker.">
+
+    <link rel="apple-touch-icon-precomposed" sizes="57x57" href="apple-touch-icon-57x57.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="apple-touch-icon-114x114.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="apple-touch-icon-72x72.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="apple-touch-icon-144x144.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="60x60" href="apple-touch-icon-60x60.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="120x120" href="apple-touch-icon-120x120.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="76x76" href="apple-touch-icon-76x76.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="apple-touch-icon-152x152.png" />
+    <link rel="icon" type="image/png" href="favicon-196x196.png" sizes="196x196" />
+    <link rel="icon" type="image/png" href="favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32" />
+    <link rel="icon" type="image/png" href="favicon-16x16.png" sizes="16x16" />
+    <link rel="icon" type="image/png" href="favicon-128.png" sizes="128x128" />
+    <meta name="application-name" content="&nbsp;"/>
+    <meta name="msapplication-TileColor" content="#FFFFFF" />
+    <meta name="msapplication-TileImage" content="mstile-144x144.png" />
+    <meta name="msapplication-square70x70logo" content="mstile-70x70.png" />
+    <meta name="msapplication-square150x150logo" content="mstile-150x150.png" />
+    <meta name="msapplication-wide310x150logo" content="mstile-310x150.png" />
+    <meta name="msapplication-square310x310logo" content="mstile-310x310.png" />
+
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="http://artefinder.ru/index.html">
+    <meta property="og:title" content="Артефакты Pathfinder Kingmaker">
+    <meta property="og:image" content="http://artefinder.ru/img/map.jpg">
+    <meta property="og:description" content="Приложение с скриншотами и описанием расположения осколков артефактов
+     для Pathfinder Kingmaker.">
+    <meta property="og:site_name" content="Artefinder">
+    <meta property="og:locale" content="ru_RU">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:url" content="http://artefinder.ru/index.html">
+    <meta name="twitter:title" content="Artefinder">
+    <meta name="twitter:description" content="Приложение с скриншотами и описанием расположения осколков артефактов
+     для Pathfinder Kingmaker.">
+    <meta name="twitter:image" content="http://artefinder.ru/img/map.jpg">
+
+    <link rel="stylesheet" href="css.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=EB+Garamond:400,400i,500,500i,600,600i,700,700i,800,800i"
+          rel="stylesheet">
+</head>
+<body class="">
+<header class="header">
+    <nav class="container">
+        <ul class="nav row">
+            <li class="artifact ">
+                <svg><use xlink:href="img/sprite.svg#necklace"></use></svg>
+                <span class="artifact__title">Ожерелье Вероломства</span>
+                <span class="artifact__text">Этот амулет дает носящему бонус +4 к проверкам навыков
+                Плутовство, Подвижность и Скрытность.
+                Его атаки исподтишка в ближнем бою наносят допольнительно 2d6 урона.
+                Когда союзник в бою отходит от носящего,
+                амулет заставляет носящего совершить по этому союзнику внеочередную атаку.</span>
+            </li>
+            <li class="artifact">
+                <svg><use xlink:href="img/sprite.svg#helmet"></use></svg>
+                <span class="artifact__title">Шлем Первопроходца</span>
+                <span class="artifact__text">Этот шлем дает носящему снижение урона 2/- против дистанционных атак
+                (10/- против падающих и метаемых камней) и способность творить заклинания добрая надежда и
+                сокрушительное отчаиние раз в день (уровень заклинателя 11, сложность 17).
+                Также он дает бонус уклонения +3 к защите и интуитивный бонус
+                +3 к спасброскам против существ с подтипами великан и гоблиноид.</span>
+            </li>
+            <li class="artifact ">
+                <svg><use xlink:href="img/sprite.svg#bracer"></use></svg>
+                <span class="artifact__title">Наручи лесного рыцаря</span>
+                <span class="artifact__text">Если какой-то эффект должен сделать носящего потрясенным,
+                этот эффект нейтрализуется, и вместо этого носящий на тот же срок получает бонус боевого духа +2
+                к броскам на попадание и урон, а также проверкам навыка<br>
+                Если какой-то эффект должен сделать носящего напуганным или ввести его в замешательство,
+                вместо этого носящий на тот же срок начинает смеятся, как под воздействием заклинания безудержный смех.
+                <br>
+                Наручи дают носящему способность применять эффект заклинания свобода движений 1 минуту в день.<br>
+                Если фея попадает по носящему, она должна сделать успешный спасбросок воли,
+                или оказаться напуганной на 1d4 раундов.
+
+            </span>
+            </li>
+            <li class="artifact ">
+                <svg><use xlink:href="img/sprite.svg#ring"></use></svg>
+                <span class="artifact__title">Кольцо безрассудной отваги</span>
+                <span class="artifact__text">Это кольцо дает носящему бонус +4 к Харизме,
+                бонус +4 к проверкам навыков Скрытность и Плутовство, бонус +4 к броскам на попадание,
+                совершаемых для подтверждения критических ударов, и бонус +2 к сложности творимых носящим заклинаний,
+                воздействующих на разум.<br>
+                Оно накладывает штраф -2 на значение Мудрости носящего,
+                штраф -4 к проверкам навыка Внимание,
+                штраф -2 к спасброскам воли и штраф -4 ко всем спасброскам против ловушек.<br>
+                Когда по носящему наносят критический удар, он оказывается в замешательстве на 1d4 раунда.
+            </span>
+            </li>
+            <li class="artifact ">
+                <svg><use xlink:href="img/sprite.svg#cloak"></use></svg>
+                <span class="artifact__title">Плащ проданных душ</span>
+                <span class="artifact__text">Этот плащ накладывает на носящего штраф -4 к Выносливости. <br>
+                Когда носящий творит заклинания школы Некромантии или подшколы Призывания,
+                плащ увеличивает его уровень заклинателя на +2 для вычисления всех переменных эффектов этого заклинания.
+                Также он увеличивает сложность спасбросков против творимых носящим заклинаний школы
+                Некромантии на +2<br>
+                Он дает носящему способность трижды в день творить заклинание вампирское прикосновение с уровнем
+                заклинателя, равным его уровню персонажа. <br>
+                Чтобы снять этот плащ,
+                на носящего необходимо сотворить заклинание снятие проклятья и
+                совершить успешную проверку уровня заклинателя со сложностью 25. При провале носящий немедленно гибнет,
+                и призывается враждебный танадаймон. Есть носящий достиг 20 уровня,
+                вместо этого призывается враждебный астрадаймон.
+            </span>
+            </li>
+            <li class="artifact ">
+                <svg><use xlink:href="img/sprite.svg#armor"></use></svg>
+                <span class="artifact__title">Тигриные полоски</span>
+                <span class="artifact__stats">9 Защита<br>
+                4 Базовая защита<br>
+                -2 Штраф за доспехи<br>
+                20 Вероятность провала мистического заклинания<br>
+                4 макс ловкость<br>
+            </span>
+                <span class="artifact__text">Этот дубленый доспех +5 даетносящему возможность по желанию
+                превращаться в смилодона. В этой форме его естественное оружие получает бонус усиления +5.</span>
+            </li>
+            <li class="artifact ">
+                <svg><use xlink:href="img/sprite.svg#glove"></use></svg>
+                <span class="artifact__title">Рукавица звездного солдата</span>
+                <span class="artifact__text">Эта перчатка дает носящему бонус усиления +8 к Силе и способность
+                неограничено стрелять лазерным лучом, наносящим 4d6 урона.</span>
+            </li>
+        </ul>
+    </nav>
+</header>
+<main class="">
+    <div class="container main">
+        <section class="description row">
+            <div class="col">
+                <h1 class="description__title">Ожерелье Вероломства</h1>
+                <span class="description__text">Этот амулет дает носящему бонус +4 к проверкам навыков
+                Плутовство, Подвижность и Скрытность.
+                Его атаки исподтишка в ближнем бою наносят допольнительно 2d6 урона.
+                Когда союзник в бою отходит от носящего,
+                амулет заставляет носящего совершить по этому союзнику внеочередную атаку.</span>
+            </div>
+            <img class="description__img img-fluid " src="img/screenshots/necklace.jpg" alt="Скриншот артефакта">
+        </section>
+        <section class="row locals ">
+        <ul class="locals__group col">
+            <li><span class="locals__title">Древняя гробница</span></li>
+            <li><span class="locals__title">Старый платан</span></li>
+            <li><span class="locals__title">Пещеры под старым платаном</span></li>
+            <li><span class="locals__title">Недра пещеры под старым платаном</span></li>
+            <li><span class="locals__title">Тернистый брод</span></li>
+            <li><span class="locals__title">Островок Три Сосны</span></li>
+            <li><span class="locals__title">Тропка в холмах</span></li>
+            <li><span class="locals__title">Развалины смотровой башни</span></li>
+            <li><span class="locals__title">Одинокий дом</span></li>
+            <li><span class="locals__title">Логово тролей, вход</span></li>
+            <li><span class="locals__title">Логово тролей, верхний уровень</span></li>
+            <li><span class="locals__title">Глубины логова тролей</span></li>
+            <li><span class="locals__title">Брод через реку смрадку</span></li>
+            <li><span class="locals__title">Хижина болотной ведьмы</span></li>
+            <li><span class="locals__title">Деревня ящеров</span></li>
+            <li><span class="locals__title">Логово ходага</span></li>
+            <li><span class="locals__title">Гоблинский форт</span></li>
+            <li><span class="locals__title">Утроба Ламашту</span></li>
+            <li><span class="locals__title">Одинокий курган</span></li>
+            <li><span class="locals__title">Волчье логово</span></li>
+            <li><span class="locals__title">Мост через реку свирь</span></li>
+            <li><span class="locals__title">Угодья для королевской охоты</span></li>
+            <li><span class="locals__title">Деревня гоблинов</span></li>
+            <li><span class="locals__title">Святыня Ламашту</span></li>
+            <li><span class="locals__title">Драколистная расселина</span></li>
+            <li><span class="locals__title">Варнхолд</span></li>
+            <li><span class="locals__title">Форт Варнхолда</span></li>
+            <li><span class="locals__title">Заросшая каверна</span></li>
+            <li><span class="locals__title">Усыпальница забытых героев</span></li>
+        </ul>
+        <ul class="locals__group col">
+            <li><span class="locals__title">Лагерь варваров-келлидов </span></li>
+            <li><span class="locals__title">Город пустых глазниц</span></li>
+            <li><span class="locals__title">Ворота долины мертвых</span></li>
+            <li><span class="locals__title">Гробница Вордакая, верхний этаж</span></li>
+            <li><span class="locals__title">Гробница Вордакая, нижний этаж</span></li>
+            <li><span class="locals__title">Зеленые чертоги</span></li>
+            <li><span class="locals__title">Цепкое болото</span></li>
+            <li><span class="locals__title">Болотные руины</span></li>
+            <li><span class="locals__title">Ручьи-и-Дожди</span></li>
+            <li><span class="locals__title">Заброшенная крепость</span></li>
+            <li><span class="locals__title">Окаменелая равнина</span></li>
+            <li><span class="locals__title">Оскверненный могильник</span></li>
+            <li><span class="locals__title">Гробница Армага, верхний уровень</span></li>
+            <li><span class="locals__title">Гробница Армага, нижний уровень</span></li>
+            <li><span class="locals__title">Пятнистая трясина</span></li>
+            <li><span class="locals__title">Малиновый овраг</span></li>
+            <li><span class="locals__title">Обугленные руины</span></li>
+            <li><span class="locals__title">Узорчатые руины</span></li>
+            <li><span class="locals__title">Изгрызенные камни </span></li>
+            <li><span class="locals__title">Хихикающий холм</span></li>
+            <li><span class="locals__title">Посредь поля</span></li>
+            <li><span class="locals__title">Зверинец</span></li>
+            <li><span class="locals__title">Порт Питакса</span></li>
+            <li><span class="locals__title">Королевский дворец Питакса</span></li>
+            <li><span class="locals__title">Дуб который заблудился</span></li>
+            <li><span class="locals__title">Деревня серебристого следа</span></li>
+            <li><span class="locals__title">Башня мерцаещего озера</span></li>
+            <li><span class="locals__title">Двуликий холм</span></li>
+        </ul>
+    </section>
+    </div>
+</main>
+<div class="info hide">
+    <div class="row">
+        <span class="col info__text">На сайте можно сохранить найденные вами части артефактов. В десктопной версии
+            достаточно даблкликнуть по иконке артефакта, в мобильной необходимо нажать на иконку и удерживать пол
+            секунды(можно дольше). Данные хранятся в локальном хранилище вашего браузера(на вашем жестком диске),
+        благодаря чему вам не нужно регистрироваться на сайте, однако, сохраненная таким образом информация будет
+        отображаться только в том браузере, в котором была сохранена.</span>
+    </div>
+    <div class="row justify-content-between">
+        <button class="info__button " name="ok">ОК</button>
+        <button class="info__button " name="okDoNotAgain">ОК, больше не показывать</button>
+    </div>
+</div>
+<footer class="footer align-items-end">
+    <div class="container">
+        <div class="row justify-content-end">
+            <span class="footer__text"><a href = "mailto: abc@example.com">Почта автора сайта</a></span>
+        </div>
+        <div class="row justify-content-end">
+            <span class="footer__text">Скриншоты сделаны лапками игрока Littletyranid</span>
+        </div>
+        <div class="row justify-content-end">
+            <span class="footer__text">
+                Авторы иконок <a href="https://delapouite.com/" rel="noreferrer noopener">Delapouite</a>, Lucas и
+                <a href="http://lorcblog.blogspot.com/" rel="noreferrer noopener">Lork</a>, работы размещенны на
+                <a href="https://game-icons.net" rel="noreferrer noopener">https://game-icons.net</a>
+             </span>
+        </div>
+
+    </div>
+</footer>
+<script src="js.js"></script>
+<noscript>
+    Для работы приложения необходимо включить JavaScript.
+</noscript>
+</body>
+</html>
